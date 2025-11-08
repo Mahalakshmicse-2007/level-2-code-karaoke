@@ -24,9 +24,20 @@ Output: [1,2]
 Input: nums = [3,3], target = 6
 Output: [0,1]
 
-# CODE:
+# CODE:def two_sum(nums, target):
+    seen = {}  
 
-# OUTPUT:
+    for i, num in enumerate(nums):
+        diff = target - num
+        if diff in seen:
+            return [seen[diff], i]  
+        seen[num] = i
+        print(two_sum([3,3],6))
+
+    return []
+
+# OUTPUT:![WhatsApp Image 2025-11-08 at 10 53 55_3dd2f906](https://github.com/user-attachments/assets/12d2feed-6d96-4b0e-9d8a-eed767ce5cc1)
+
 
 
 # Question 2:
@@ -48,6 +59,17 @@ Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 
-# CODE:
+# CODE:def is_palindrome(x):
 
-# OUTPUT:
+    return str(x) == str(x)[::-1]
+
+
+x = int(input("Enter an integer: "))
+
+if is_palindrome(x):
+    print("True — It's a palindrome!")
+else:
+    print("False — Not a palindrome.")
+
+# OUTPUT:![WhatsApp Image 2025-11-08 at 11 12 19_a0e742e9](https://github.com/user-attachments/assets/72067f81-bf6c-43e4-898c-fcaf3105fc77)
+
