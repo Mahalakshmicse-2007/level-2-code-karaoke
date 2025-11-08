@@ -59,7 +59,8 @@ Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 
-# CODE:def is_palindrome(x):
+# CODE:
+def is_palindrome(x):
 
     return str(x) == str(x)[::-1]
 
@@ -70,6 +71,5 @@ if is_palindrome(x):
     print("True — It's a palindrome!")
 else:
     print("False — Not a palindrome.")
-
 # OUTPUT:![WhatsApp Image 2025-11-08 at 11 12 19_a0e742e9](https://github.com/user-attachments/assets/72067f81-bf6c-43e4-898c-fcaf3105fc77)
 
